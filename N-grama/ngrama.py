@@ -4,8 +4,6 @@ def Ngrama(n, palabra, archivo):
 	lista = []
 	for x in range(len(palabra)-(n-1)):
 		lista.append(palabra[x:x+n])	#Manda a una lista los ngramas
-	print(lista)
-
 	dic = {}
 	for w in lista:
 		dic.update({w : lista.count(w)}) #Se agrega en un diccionario el ngrama y se actualiza el numero de apariciones
